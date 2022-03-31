@@ -26,6 +26,11 @@ touch ~/.bash_aliases
 alias fn='cd $(...path to the f.sh script...)'
 ```
 
+* Refresh your terminal
+```
+. ~/.bashrc
+```
+
 ## How to modify
 
 #### Change a directory from where the search starts:
