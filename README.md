@@ -18,7 +18,7 @@ git clone https://github.com/Ihor16/finder.git
 cd ./finder && ./setup.sh
 ```
 
-Since the "setup.sh" creates an alias points to a "f.sh" script in this repository, no configuration will be required when you pull a newer version of this repo. The "setup.sh" script is documented, so you can take a look at what exactly it does
+Since the "setup.sh" creates an alias to the "f.sh" script in this repository, no configuration will be required when you pull a newer version of this repo. The "setup.sh" script is documented, so you can take a look at what exactly it does
 
 ## How to modify
 
