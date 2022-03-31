@@ -13,6 +13,11 @@ The script uses fzf to recursively search through all visible directories starti
 git clone https://github.com/Ihor16/finder.git
 ```
 
+* Installe the "fzf" package
+```
+sudo apt-get update && sudo apt-get install fzf -y
+```
+
 * Run the "setup.sh" script
 ```
 cd ./finder && ./setup.sh
