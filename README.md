@@ -8,37 +8,17 @@ The script uses fzf to recursively search through all visible directories starti
 
 ## How to set up
 
-* Install "fzf" package
-
+* Clone the repository
 ```
-sudo apt-get update && sudo apt-get install fzf -y
-```
-
-* Create a ".bash_aliases" file in your home directory if you don't have one
-
-```
-touch ~/.bash_aliases
+git clone https://github.com/Ihor16/finder.git
 ```
 
-* Create an alias in the ".bash_aliases" file manually or by running the command
-  
-  **Manually**
-  
-  ```bash
-  alias fn='cd $(...path to the f.sh script...)'
-  ```
-  
-  **Command**
-  
-  ```bash
-  cd finder/ && echo "alias fn='cd \$($(pwd)/f.sh)'" >> ~/.bash_aliases
-  ```
-
-* Refresh the terminal
-
+* Run the "setup.sh" script
 ```
-. ~/.bashrc
+cd ./finder && ./setup.sh
 ```
+
+Since the "setup.sh" creates an alias points to a "f.sh" script in this repository, no configuration will be required when you pull a newer version of this repo. The "setup.sh" script is documented, so you can take a look at what exactly it does
 
 ## How to modify
 
