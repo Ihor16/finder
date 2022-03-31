@@ -4,7 +4,7 @@ Navigate between directories using a terminal fuzzy finder
 
 ![demo.gif](./docs/demo.gif)
 
-The script uses fzf to recursively search through all visible directories starting from "home." It allows to navigate to any of those directories from any location in the file system.
+The script uses fzf to recursively search through all visible directories starting from "home." It allows to navigate to any of those directories from any location in the file system
 
 ## How to set up
 
