@@ -20,13 +20,22 @@ sudo apt-get update && sudo apt-get install fzf -y
 touch ~/.bash_aliases
 ```
 
-* Create an alias in the ".bash_aliases" file with entering a path to the "f.sh" script
-
-```bash
-alias fn='cd $(...path to the f.sh script...)'
-```
+* Create an alias in the ".bash_aliases" file manually or by running the command
+  
+  **Manually**
+  
+  ```bash
+  alias fn='cd $(...path to the f.sh script...)'
+  ```
+  
+  **Command**
+  
+  ```bash
+  cd finder/ && echo "alias fn='cd \$($(pwd)/f.sh)'" >> ~/.bash_aliases
+  ```
 
 * Refresh the terminal
+
 ```
 . ~/.bashrc
 ```
