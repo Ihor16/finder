@@ -4,11 +4,11 @@ Navigate between directories using a terminal fuzzy finder
 
 ![demo.gif](./docs/demo.gif)
 
-The script uses fzf to recursively search through all visible directories starting from "home." It allows to navigate to any of those directories from any point in the file system.
+The script uses fzf to recursively search through all visible directories starting from "home." It allows to navigate to any of those directories from any location in the file system.
 
 ## How to set up
 
-* Install "fzf" package with
+* Install "fzf" package
 
 ```
 sudo apt-get update && sudo apt-get install fzf -y
@@ -20,7 +20,7 @@ sudo apt-get update && sudo apt-get install fzf -y
 touch ~/.bash_aliases
 ```
 
-* Create an alias in the .bash_aliases file with entering a path to the "f.sh" script
+* Create an alias in the ".bash_aliases" file with entering a path to the "f.sh" script
 
 ```bash
 alias fn='cd $(...path to the f.sh script...)'
