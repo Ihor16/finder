@@ -26,7 +26,7 @@ touch ~/.bash_aliases
 alias fn='cd $(...path to the f.sh script...)'
 ```
 
-* Refresh your terminal
+* Refresh the terminal
 ```
 . ~/.bashrc
 ```
