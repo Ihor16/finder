@@ -32,10 +32,10 @@ The "setup.sh" script is documented, so you can take a look at what exactly it d
 
 #### Change a directory from where the search starts:
 
-* Edit the `dir` variable assignment from "~" to your own one. This will make `fn` start searching from that directory by default
-
-* Pass the directory as an argument to `fn` command. For example, this will start searching from the "coding" directory
+* Pass the directory as an argument to `fn` command. For example, this will start searching from your current directory
   
   ```console
-  fn ~/coding
+  fn .
   ```
+
+* In the "f.sh" script, edit the `dir` variable assignment from "~" to your own one. This will make `fn` start searching from that directory by default
