@@ -4,7 +4,7 @@
 touch ~/.bash_aliases
 
 # Puts the alias in the .bash_aliases file
-echo "alias fn='cd \$($(pwd)/f.sh)'" >> ~/.bash_aliases
+echo "alias fn='. \$(pwd)/f.sh'" >> ~/.bash_aliases
 
 # Refreshes the terminal
 . ~/.bashrc

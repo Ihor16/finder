@@ -4,29 +4,38 @@ Navigate between directories using a terminal fuzzy finder
 
 ![demo.gif](./docs/demo.gif)
 
-The script uses fzf to recursively search through all visible directories starting from "home." It allows to navigate to any of those directories from any location in the file system
+The script uses [fzf](https://github.com/junegunn/fzf) to navigate to any visible directory from anywhere in your file system. The default base directory is "home", but you can specify your starting directory as a parameter
 
 ## How to set up
 
 * Clone the repository
-```
-git clone https://github.com/Ihor16/finder.git
-```
+  
+  ```console
+  git clone https://github.com/Ihor16/finder.git
+  ```
 
-* Installe the "fzf" package
-```
-sudo apt-get update && sudo apt-get install fzf -y
-```
+* Installe the "fzf" package as described [here](https://github.com/junegunn/fzf#installation). For example, run
+  
+  ```console
+  sudo apt-get update && sudo apt-get install fzf
+  ```
 
 * Run the "setup.sh" script
-```
-cd ./finder && ./setup.sh
-```
+  
+  ```console
+  ./setup.sh
+  ```
 
-Since the "setup.sh" creates an alias to the "f.sh" script in this repository, no configuration will be required when you pull a newer version of this repo. The "setup.sh" script is documented, so you can take a look at what exactly it does
+The "setup.sh" script is documented, so you can take a look at what exactly it does
 
 ## How to modify
 
 #### Change a directory from where the search starts:
 
-* Edit the `find` command's "~" in the f.sh to specify that directory
+* Edit the `dir` variable assignment from "~" to your own one. This will make `fn` start searching from that directory by default
+
+* Pass the directory as an argument to `fn` command. For example, this will start searching from the "coding" directory
+  
+  ```console
+  fn ~/coding
+  ```
