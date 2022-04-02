@@ -1,11 +1,18 @@
 #!/bin/bash
 
-val=$(find ~ -type d -not -path '*/.*' | fzf)
-
-if [ -z "$val" ]
+if [ -z "${1}" ]
 then 
-    echo $(pwd)
+    # Default base directory
+    dir=~
 else
-    echo $val
+    dir=${1}
 fi
 
+dest=$(find $dir -type d -not -path '*/.*' | sort | fzf)
+
+if [ -z "$dest" ]
+then 
+    cd "$(pwd)"
+else
+    cd "$dest"
+fi
