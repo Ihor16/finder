@@ -28,7 +28,11 @@ The script uses [fzf](https://github.com/junegunn/fzf) to navigate to any visibl
 
 The "setup.sh" script is documented, so you can take a look at what exactly it does
 
-## How to modify
+## How to use
+
+#### Default behavior:
+
+* Type `fn` and start typing the name of the directory you want to go to. This will filter through all visible directories that start at "home" and navigate to where you want
 
 #### Change a directory from where the search starts:
 
