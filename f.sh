@@ -8,7 +8,7 @@ else
     dir=${1}
 fi
 
-dest=$(find $dir -type d -not -path '*/.*' | sort | fzf)
+dest=$(find $dir -type d -user 1000 -not -path '*/.*' 2>/dev/null | sort | fzf)
 
 if [ -z "$dest" ]
 then 
